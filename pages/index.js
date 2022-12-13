@@ -1,3 +1,15 @@
+import Head from "next/head";
+import SitesList from "../components/SitesList";
+
 export default function Home() {
-  return <h1>Hello Beavers 🦫</h1>;
+  return (
+    <>
+      <Head>
+        <title>Profan</title>
+      </Head>
+      <h1>Profan</h1>
+
+      <SitesList />
+    </>
+  );
 }
