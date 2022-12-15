@@ -18,37 +18,30 @@ const GlobalStyles = createGlobalStyle`
     html{
         background: url('/images/stamen-map.png') no-repeat center center fixed;
         background-size: cover;
-  height: 100%;
-  overflow: hidden;
+        height: 100%;
+        overflow: hidden;
         margin: 0;
         padding: 0;
         font-family: 'Trade Gothic';
     }
     body {
-        
-
-        
         margin: 0;
         padding: 10%;
-
 }
-        
-        
-    
-h1, h2, h3, h4, h5, h6 {
-    font-family: Lisbon;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Lisbon;
 }
     * {
         box-sizing: border-box;
         
     }
-    li 
-    {list-style: none;
+    li {
+        list-style: none;
         
     }
-    u {
-  text-decoration: underline;
-  text-decoration-thickness: 10%;
+    span {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
 }
 mark {
     background-color: rosybrown;

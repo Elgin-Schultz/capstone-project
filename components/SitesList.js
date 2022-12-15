@@ -5,7 +5,7 @@ export default function SitesList() {
   const sites = allSites.map((site) => {
     return (
       <li>
-        <mark>{site.pos[0] + " | " + site.pos[1]}</mark>
+        <mark>{site.coordinates[0] + " | " + site.coordinates[1]}</mark>
       </li>
     );
   });
