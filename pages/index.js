@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import SitesList from "../components/SitesList";
+import SitesList from "./singlesite/ssindex";
 
 export default function Home() {
   return (

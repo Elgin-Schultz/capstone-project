@@ -45,6 +45,13 @@ const GlobalStyles = createGlobalStyle`
 }
 mark {
     background-color: rosybrown;
-}`;
+}
+
+    a {
+  text-decoration: none;
+
+
+}
+`;
 
 export default GlobalStyles;
