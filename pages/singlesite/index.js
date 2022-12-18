@@ -7,7 +7,7 @@ export default function SitesList() {
     <ul>
       {allSites.map((site) => (
         <li key={site.slug}>
-          <Link href={`/singlesite/${allSites.slug}`}>
+          <Link href={`/singlesite/${site.slug}`}>
             <mark>{site.coordinates[0] + " | " + site.coordinates[1]}</mark>
           </Link>
         </li>
