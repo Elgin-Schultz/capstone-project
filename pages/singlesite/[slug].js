@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
-import Head from "next/head";
+
 import { useRouter } from "next/router";
 import { allSites } from "../../lib/sites";
 
@@ -23,15 +23,25 @@ export default function singleSite() {
       <StyledContainer>
         <StyledImage src={picture[0]} alt={currentSite.adress} fill />
       </StyledContainer>
-      <StyledButton>Back</StyledButton>
+      <p>
+        <StyledLink href="/singlesite">
+          <Image src={"/profan.svg"} alt="Profan-Logo" height={50} width={50} />
+        </StyledLink>
+      </p>
     </>
   );
 }
 
 const StyledImage = styled(Image)`
   object-fit: cover;
+  z-index: -1;
 `;
 
 const StyledContainer = styled.div`
   overflow: hidden;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
 `;

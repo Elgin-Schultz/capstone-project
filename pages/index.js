@@ -8,9 +8,6 @@ export default function Home() {
       <Head>
         <title>Profan</title>
       </Head>
-      <h1>
-        pro|f<span>a</span>n
-      </h1>
 
       <SitesList />
     </>
