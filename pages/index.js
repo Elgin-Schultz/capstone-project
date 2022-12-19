@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/header";
 import Image from "next/image";
 import Introduction from "../components/introduction";
-import SitesList from "./singlesite/index";
+import SitesListComp from "../components/siteslistComp";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Header />
       <Introduction />
-      <SitesList />
+      <SitesListComp />
     </>
   );
 }
