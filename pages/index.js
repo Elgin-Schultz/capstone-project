@@ -1,6 +1,8 @@
 import Head from "next/head";
+import Header from "../components/header";
 import Image from "next/image";
-import SitesList from "../components/SitesList";
+import Introduction from "../components/introduction";
+import SitesList from "./singlesite/index";
 
 export default function Home() {
   return (
@@ -8,10 +10,8 @@ export default function Home() {
       <Head>
         <title>Profan</title>
       </Head>
-      <h1>
-        pro|f<span>a</span>n
-      </h1>
-
+      <Header />
+      <Introduction />
       <SitesList />
     </>
   );

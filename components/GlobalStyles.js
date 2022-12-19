@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import Image from "next/image";
 
 const GlobalStyles = createGlobalStyle`
@@ -26,25 +27,39 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
         margin: 0;
-        padding: 10%;
+        padding: 5%;
 }
     h1, h2, h3, h4, h5, h6 {
         font-family: Lisbon;
-}
+        
+    }
     * {
         box-sizing: border-box;
         
     }
     li {
         list-style: none;
+        padding-left: 0px;
         
     }
-    span {
-    text-decoration: underline;
-    text-decoration-thickness: 10%;
+    ul {
+        padding-left: 0px;   
+    }
+    
+
+mark { background-color: white;
+
 }
-mark {
+li mark {
     background-color: rosybrown;
-}`;
+}
+
+    a {
+  text-decoration: none;
+
+
+}
+
+`;
 
 export default GlobalStyles;
