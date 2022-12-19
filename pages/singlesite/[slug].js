@@ -9,7 +9,6 @@ export default function singleSite() {
   const router = useRouter();
   const slug = router.query.slug;
   const currentSite = allSites.find((site) => site.slug === slug);
-  const picture = currentSite.currentPicture;
 
   if (!currentSite) {
     return;
@@ -21,7 +20,11 @@ export default function singleSite() {
   return (
     <>
       <StyledContainer>
-        <StyledImage src={picture[0]} alt={currentSite.adress} fill />
+        <StyledImage
+          src={currentSite.currentPicture[0]}
+          alt={currentSite.adress}
+          fill
+        />
       </StyledContainer>
       <p>
         <StyledLink href="/singlesite">
