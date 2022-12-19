@@ -1,13 +1,12 @@
 import Link from "next/link";
+import Header from "../../components/header";
 import styled from "styled-components";
 import { allSites } from "../../lib/sites";
 
 export default function SitesList() {
   return (
     <>
-      <h1>
-        pro|f<span>a</span>n
-      </h1>
+      <Header />
       <ul>
         {allSites.map((site) => (
           <li key={site.slug}>
