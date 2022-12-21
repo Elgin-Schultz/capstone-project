@@ -29,7 +29,7 @@ export default function singleSite() {
       <p>
         <StyledLink href="/singlesite">
           <Image
-            src={"/profan--rosybrown.svg"}
+            src={"/profan--rosybrowngit.svg"}
             alt="Profan-Logo"
             height={50}
             width={50}
