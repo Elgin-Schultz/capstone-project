@@ -57,8 +57,6 @@ export default function singleSite() {
               clickable: true,
             }}
             modules={[Pagination]}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <StyledSwiperSlide>
               <StyledImage
@@ -96,8 +94,6 @@ export default function singleSite() {
               clickable: true,
             }}
             modules={[Pagination]}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <StyledSwiperSlide>
               <StyledFigure>
@@ -178,17 +174,13 @@ export default function singleSite() {
                     " | " +
                     currentSite.coordinates[1]}
                 </h2>
-                <p className="credits">
-                  {currentSite.credits[0]}
-                  <br />
-                  {currentSite.credits[1]}
-                  <br />
-                  {currentSite.credits[2]}
-                  <br />
-                  {currentSite.credits[3]}
-                  <br />
-                  {currentSite.credits[4]}
-                </p>
+                <ul className="credits-list">
+                  <li>{currentSite.credits[0]}</li>
+                  <li>{currentSite.credits[1]}</li>
+                  <li>{currentSite.credits[2]}</li>
+                  <li>{currentSite.credits[3]}</li>
+                  <li>{currentSite.credits[4]}</li>
+                </ul>
               </div>
             </StyledSwiperSlide>
           </Swiper>

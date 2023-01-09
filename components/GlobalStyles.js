@@ -17,7 +17,6 @@ const GlobalStyles = createGlobalStyle`
 		src: url('/fonts/Trade-Gothic-LT.ttf') format('truetype');
     
 	}
-    
     :root{
         --swiper-theme-color: black!important;
     }
@@ -30,60 +29,44 @@ const GlobalStyles = createGlobalStyle`
         margin: 3%;
         background: url('/images/stamen-map.png') no-repeat center center fixed;
         background-size: cover;
-        overflow: hidden;
-        
+        overflow: hidden;  
 }
     h1, h2, h3, h4, h5, h6 {
         font-family: Lisbon;
-        
     }
     * {
         box-sizing: border-box;
-        
     }
     li {
         list-style: none;
         padding-left: 0px;
-        
     }
     ul {
         padding-left: 0px;   
     }
-    
-
 mark { background-color: white;
 
 }
 li mark {
-    
     background-color: rosybrown;
 }
-
-    a {
+a {
   text-decoration: none;
   color: black;
 }
-
 .swiper-pagination {
-    
-
-
 }
 .document{
    padding:2%;
-   background-color: #D0B3B3;
-   
+   background-color: #D0B3B3;  
 }
 
 .quote-card {
     background-color: white;
     padding: 1rem;
-
-
 }  
 .quote {font-family: SommerwerkInk;
     font-size: 1.5rem;
-    
 }
 
 .quote-source {font-family: 'Trade Gothic';
@@ -99,29 +82,18 @@ li mark {
 .credits-card{
     background-color: white;
     padding: 1rem;
-
-
 }  
-
 .mySwiper,
 .mySwiper2 {
      height: 90vh;
      width: 90vw;
-     
-     
-     
-
-}
-    
-
+}   
 .swiper-pagination-bullet{
     background-color: #D0B3B3 !important;
     opacity: 80%;
     z-index: 999999;
     height: 1rem;
     width: 1rem;
-    
-    
 }
 .swiper-pagination-bullet-active{
     background-color:  grey !important;
@@ -130,14 +102,9 @@ li mark {
     height: 1rem;
     width: 1rem;
 }
-
 .swiper-pagination-vertical {
-    
-    
     z-index: 99999
-    }
-    
-    
+}
 `;
 
 export default GlobalStyles;
