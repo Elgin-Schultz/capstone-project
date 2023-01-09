@@ -10,24 +10,28 @@ const GlobalStyles = createGlobalStyle`
 	}
     @font-face {
 		font-family: SommerwerkInk;
-		src: url('/fonts/SommerwerkIn.otf') format('opentype');
+		src: url('/fonts/SommerwerkInk.otf') format('opentype');
 	}
     @font-face {
 		font-family: 'Trade Gothic';
 		src: url('/fonts/Trade-Gothic-LT.ttf') format('truetype');
+    
 	}
+    
+    :root{
+        --swiper-theme-color: black!important;
+    }
     html{
-        background: url('/images/stamen-map.png') no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
         margin: 0;
         padding: 0;
         font-family: 'Trade Gothic';
     }
     body {
-        margin: 0;
-        padding: 5%;
+        margin: 3%;
+        background: url('/images/stamen-map.png') no-repeat center center fixed;
+        background-size: cover;
+        overflow: hidden;
+        
 }
     h1, h2, h3, h4, h5, h6 {
         font-family: Lisbon;
@@ -51,15 +55,89 @@ mark { background-color: white;
 
 }
 li mark {
+    
     background-color: rosybrown;
 }
 
     a {
   text-decoration: none;
+  color: black;
+}
+
+.swiper-pagination {
+    
 
 
 }
+.document{
+   padding:2%;
+   background-color: #D0B3B3;
+   
+}
 
+.quote-card {
+    background-color: white;
+    padding: 1rem;
+
+
+}  
+.quote {font-family: SommerwerkInk;
+    font-size: 1.5rem;
+    
+}
+
+.quote-source {font-family: 'Trade Gothic';
+    font-size: 1rem;
+    
+}  
+.figcaption-ancient{
+    font-family: SommerwerkInk;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #D0B3B3;
+}
+.credits-card{
+    background-color: white;
+    padding: 1rem;
+
+
+}  
+
+.mySwiper,
+.mySwiper2 {
+     height: 90vh;
+     width: 90vw;
+     
+     
+     
+
+}
+    
+
+.swiper-pagination-bullet{
+    background-color: #D0B3B3 !important;
+    opacity: 80%;
+    z-index: 999999;
+    height: 1rem;
+    width: 1rem;
+    
+    
+}
+.swiper-pagination-bullet-active{
+    background-color:  grey !important;
+    opacity: 80%;
+    z-index: 999999;
+    height: 1rem;
+    width: 1rem;
+}
+
+.swiper-pagination-vertical {
+    
+    
+    z-index: 99999
+    }
+    
+    
 `;
 
 export default GlobalStyles;
