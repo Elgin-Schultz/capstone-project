@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Image from "next/image";
 import Introduction from "../components/introduction";
 import SitesListComp from "../components/siteslistComp";
+import Legal from "../components/legal";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <Introduction />
       <SitesListComp />
+      <Legal />
     </>
   );
 }

@@ -37,22 +37,31 @@ const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
+    p {
+        max-width: 960px;
+    }
     li {
         list-style: none;
         padding-left: 0px;
+        max-width: 960px;
     }
     ul {
         padding-left: 0px;   
     }
+a {
+  text-decoration: none;
+  color: black;
+}    
+input, button, submit
+{
+    background: none;
+    border:none;
+} 
 mark { background-color: white;
 
 }
 li mark {
     background-color: rosybrown;
-}
-a {
-  text-decoration: none;
-  color: black;
 }
 .swiper-pagination {
 }
