@@ -58,17 +58,6 @@ input, button, submit
     border:none;
 } 
 
-.mark 
-{background-color: rosybrown;
-    
-}
-
-
-
-container-siteslist{
-    flex: 1;
-    
-}
 .container-legal{
     display: inline-flex;
     align-items: flex-end;

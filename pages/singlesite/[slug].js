@@ -8,7 +8,7 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { allSites } from "../../lib/sites";
+import { allSites } from "../../lib/data-sites";
 
 export default function singleSite() {
   const router = useRouter();

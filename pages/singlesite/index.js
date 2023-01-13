@@ -11,11 +11,8 @@ export default function SitesList() {
   return (
     <StyledDiv>
       <Header />
-      <div className="container-siteslist">
-        <SitesListComp />
-      </div>
-
-      <StyledLegal />
+      <SitesListComp />
+      <Legal />
     </StyledDiv>
   );
 }
@@ -25,7 +22,6 @@ const StyledDiv = styled.div`
   flex-direction: column;
 `;
 
-const StyledLegal = styled(Legal)``;
 /*export default function SitesList() {
   return (
     <ul>

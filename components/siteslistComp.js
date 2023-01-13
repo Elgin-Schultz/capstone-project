@@ -1,18 +1,22 @@
 import Link from "next/link";
-import { allSites } from "../lib/sites";
+import { allSites } from "../lib/data-sites";
+import styled from "styled-components";
 
 export default function SitesListComp() {
   return (
     <ul>
       {allSites.map((site) => (
-        <li class="siteslist" key={site.slug}>
+        <li key={site.slug}>
           <Link href={`/singlesite/${site.slug}`}>
-            <span className="mark">
+            <StyledSpan>
               {site.coordinates[0] + " | " + site.coordinates[1]}
-            </span>
+            </StyledSpan>
           </Link>
         </li>
       ))}
     </ul>
   );
 }
+const StyledSpan = styled.span`
+  background-color: rosybrown;
+`;
