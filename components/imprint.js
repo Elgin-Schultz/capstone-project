@@ -1,3 +1,5 @@
+import { allSites } from "../lib/data-sites";
+
 export default function Imprint() {
   return (
     <div>
