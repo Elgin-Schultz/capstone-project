@@ -38,11 +38,12 @@ export default function Legal() {
 }
 
 const StyledDiv = styled.div`
-  display: block;
   background-color: white;
-  opacity: 90%;
-  padding: 2%;
+  opacity: 95%;
+  padding: 10%;
   max-width: 960px;
+  position: relative;
+  top: -25vh;
 `;
 
 const StyledButton = styled.button`
