@@ -37,22 +37,38 @@ const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
+    p {
+        max-width: 960px;
+    }
     li {
         list-style: none;
         padding-left: 0px;
+        max-width: 960px;
     }
     ul {
         padding-left: 0px;   
     }
-mark { background-color: white;
-
-}
-li mark {
-    background-color: rosybrown;
-}
 a {
   text-decoration: none;
   color: black;
+}    
+input, button, submit
+{
+    background: none;
+    border:none;
+} 
+
+.container-legal{
+    display: inline-flex;
+    align-items: flex-end;
+}
+.container-popup{
+    display: inline-flex;
+}
+
+.styled-legal{
+    display: inline-flex;
+    flex-direction: row;
 }
 .swiper-pagination {
 }
@@ -104,6 +120,11 @@ a {
 }
 .swiper-pagination-vertical {
     z-index: 99999
+}
+
+
+h1 {
+    align-self: flex-start;
 }
 `;
 

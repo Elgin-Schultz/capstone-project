@@ -3,6 +3,8 @@ import Header from "../components/header";
 import Image from "next/image";
 import Introduction from "../components/introduction";
 import SitesListComp from "../components/siteslistComp";
+import Legal from "../components/legal";
+import styled from "styled-components";
 
 export default function Home() {
   return (
@@ -10,9 +12,16 @@ export default function Home() {
       <Head>
         <title>Profan</title>
       </Head>
-      <Header />
-      <Introduction />
-      <SitesListComp />
+      <StyledDiv>
+        <Header />
+        <Introduction />
+        <SitesListComp />
+        <Legal />
+      </StyledDiv>
     </>
   );
 }
+const StyledDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
