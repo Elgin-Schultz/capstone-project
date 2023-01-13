@@ -57,11 +57,29 @@ input, button, submit
     background: none;
     border:none;
 } 
-mark { background-color: white;
 
+.mark 
+{background-color: rosybrown;
+    
 }
-li mark {
-    background-color: rosybrown;
+
+
+
+container-siteslist{
+    flex: 1;
+    
+}
+.container-legal{
+    display: inline-flex;
+    align-items: flex-end;
+}
+.container-popup{
+    display: inline-flex;
+}
+
+.styled-legal{
+    display: inline-flex;
+    flex-direction: row;
 }
 .swiper-pagination {
 }
@@ -113,6 +131,11 @@ li mark {
 }
 .swiper-pagination-vertical {
     z-index: 99999
+}
+
+
+h1 {
+    align-self: flex-start;
 }
 `;
 

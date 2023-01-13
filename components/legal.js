@@ -10,15 +10,15 @@ export default function Legal() {
   }
 
   return (
-    <div>
-      <button onClick={toggleShowPopup}>
+    <div className="container-popup">
+      <StyledButton onClick={toggleShowPopup}>
         <StyledImage
           src={"/legal--rosybrown.svg"}
           alt="Profan-Logo"
           height={50}
           width={50}
         />
-      </button>
+      </StyledButton>
       {showPopup ? (
         <StyledDiv>
           <h2>Impressum</h2>
@@ -38,13 +38,17 @@ export default function Legal() {
 }
 
 const StyledDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
   background-color: white;
+  opacity: 90%;
   padding: 2%;
+  max-width: 960px;
 `;
 
+const StyledButton = styled.button`
+  flex: 0;
+  align-self: flex-start;
+`;
 const StyledImage = styled(Image)`
   z-index: 9999;
 `;

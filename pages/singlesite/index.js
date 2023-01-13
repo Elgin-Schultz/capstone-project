@@ -11,12 +11,19 @@ export default function SitesList() {
   return (
     <StyledDiv>
       <Header />
-      <SitesListComp />
+      <div className="container-siteslist">
+        <SitesListComp />
+      </div>
+
       <StyledLegal />
     </StyledDiv>
   );
 }
-const StyledDiv = styled.div``;
+
+const StyledDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 const StyledLegal = styled(Legal)``;
 /*export default function SitesList() {

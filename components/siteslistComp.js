@@ -5,9 +5,11 @@ export default function SitesListComp() {
   return (
     <ul>
       {allSites.map((site) => (
-        <li key={site.slug}>
+        <li class="siteslist" key={site.slug}>
           <Link href={`/singlesite/${site.slug}`}>
-            <mark>{site.coordinates[0] + " | " + site.coordinates[1]}</mark>
+            <span className="mark">
+              {site.coordinates[0] + " | " + site.coordinates[1]}
+            </span>
           </Link>
         </li>
       ))}
