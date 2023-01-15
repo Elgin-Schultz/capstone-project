@@ -121,7 +121,17 @@ input, button, submit
 .swiper-pagination-vertical {
     z-index: 99999
 }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 h1 {
     align-self: flex-start;

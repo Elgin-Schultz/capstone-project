@@ -234,8 +234,8 @@ const StyledFigure = styled.figure`
 `;
 
 const StyledLink = styled(Link)`
-  display: flex;
-  align-items: flex-start;
-  justify-content: right;
-  margin: 1vw; ;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 31;
 `;
