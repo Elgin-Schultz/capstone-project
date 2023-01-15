@@ -35,13 +35,14 @@ const StyledDiv = styled.div`
   padding: 10%;
   max-width: 960px;
   position: relative;
-  top: -25vh;
+
+  z-index: 20;
 `;
 
 const StyledButton = styled.button`
-  flex: 0;
-  align-self: flex-start;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 21;
 `;
-const StyledImage = styled(Image)`
-  z-index: 9999;
-`;
+const StyledImage = styled(Image)``;
