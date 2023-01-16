@@ -56,7 +56,7 @@ a {
 input, button, submit
 {
     background: none;
-    border:none;
+    border: none;
 } 
 
 .container-legal{
@@ -102,8 +102,8 @@ input, button, submit
 }  
 .mySwiper,
 .mySwiper2 {
-     height: 100dvh;
-     width: 100dvw;
+     height: 100vh;
+     width: 100vw;
 }   
 .swiper-pagination {
     position: fixed;
