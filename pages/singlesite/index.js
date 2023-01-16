@@ -25,7 +25,7 @@ export default function SitesList() {
 
 const StyledDiv = styled.div`
   display: grid;
-  gap: 0.5rem;
+  gap: 0.125rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
   align-items: end;

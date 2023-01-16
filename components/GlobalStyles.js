@@ -26,13 +26,14 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Trade Gothic';
     }
     body {
-        margin: 3%;
+        margin: 1rem;
         background: url('/images/stamen-map.png') no-repeat center center fixed;
         background-size: cover;
         overflow: hidden;  
 }
     h1, h2, h3, h4, h5, h6 {
         font-family: Lisbon;
+        margin: 0;
     }
     * {
         box-sizing: border-box;
@@ -62,20 +63,20 @@ input, button, submit
     display: inline-flex;
     align-items: flex-end;
 }
-.container-popup{
-    display: inline-flex;
+
+
+
+.swiper-pagination {
+    position: fixed;
+    bottom: 0.5rem;
 }
 
-.styled-legal{
-    display: inline-flex;
-    flex-direction: row;
-}
-.swiper-pagination {
-}
-.document{
-   padding:2%;
-   background-color: #D0B3B3;  
-}
+.info-card {
+    background-color: white;
+    padding: 1rem;
+}  
+.info {font-family: 'Trade Gothic';
+    font-size: 1rem;}
 
 .quote-card {
     background-color: white;
@@ -85,13 +86,13 @@ input, button, submit
     font-size: 1.5rem;
 }
 
-.quote-source {font-family: 'Trade Gothic';
-    font-size: 1rem;
+.source {font-family: 'Trade Gothic';
+    font-size: 0.75rem;
     
 }  
 .figcaption-ancient{
     font-family: SommerwerkInk;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem;
     color: #D0B3B3;
 }
@@ -101,9 +102,21 @@ input, button, submit
 }  
 .mySwiper,
 .mySwiper2 {
-     height: 90vh;
-     width: 90vw;
+     height: 100dvh;
+     width: 100dvw;
 }   
+.swiper-pagination {
+    position: fixed;
+    bottom: 0.5rem;
+}
+.swiper-pagination-vertical {
+    z-index: 99999;
+    position: fixed;
+    right: 0.5rem;
+    
+    
+}
+
 .swiper-pagination-bullet{
     background-color: #D0B3B3 !important;
     opacity: 80%;
@@ -118,9 +131,7 @@ input, button, submit
     height: 1rem;
     width: 1rem;
 }
-.swiper-pagination-vertical {
-    z-index: 99999
-}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -133,9 +144,7 @@ input, button, submit
   }
 }
 
-h1 {
-    align-self: flex-start;
-}
+
 `;
 
 export default GlobalStyles;
