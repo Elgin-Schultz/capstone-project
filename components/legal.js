@@ -33,10 +33,9 @@ const StyledDiv = styled.div`
   background-color: white;
   opacity: 95%;
   padding: 1rem;
-  max-width: 960px;
   position: relative;
-
   z-index: 20;
+  width: 100dvw;
 `;
 
 const StyledButton = styled.button`

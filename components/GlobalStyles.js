@@ -34,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6 {
         font-family: Lisbon;
         margin: 0;
+        max-width: 960px;
     }
     * {
         box-sizing: border-box;
@@ -53,7 +54,7 @@ a {
   text-decoration: none;
   color: black;
 }    
-input, button, submit
+button
 {
     background: none;
     border: none;
@@ -88,12 +89,14 @@ input, button, submit
 
 .source {font-family: 'Trade Gothic';
     font-size: 0.75rem;
+    text-align: justify;
     
 }  
 .figcaption-ancient{
     font-family: SommerwerkInk;
     font-size: 1.25rem;
     padding: 1rem;
+    text-align: center;
     color: #D0B3B3;
 }
 .credits-card{

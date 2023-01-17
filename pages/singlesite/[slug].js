@@ -236,8 +236,8 @@ const StyledSwiperSlide = styled(SwiperSlide)`
 const StyledImage = styled(Image)`
   display: block;
   object-fit: contain;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   transform: translateZ(0);
 `;
 
@@ -247,8 +247,8 @@ const StyledContainer = styled.div`
 const StyledFigure = styled.figure`
   display: flex;
   object-fit: contain;
-  width: 100% !important;
-  height: auto !important;
+  width: 100%;
+  height: auto;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
@@ -262,8 +262,8 @@ const StyledFigure = styled.figure`
 const StyledFigure2 = styled.figure`
   display: flex;
   object-fit: contain;
-  width: 100% !important;
-  height: auto !important;
+  width: 100%;
+  height: auto;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
