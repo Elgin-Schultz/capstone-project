@@ -14,6 +14,7 @@ export default function singleSite() {
   const router = useRouter();
   const slug = router.query.slug;
   const currentSite = allSites.find((site) => site.slug === slug);
+  const siteCurrents = currentSite.currentPicture;
 
   if (!currentSite) {
     return (
@@ -77,24 +78,17 @@ export default function singleSite() {
             }}
             modules={[Pagination]}
           >
-            <StyledSwiperSlide>
-              <StyledImage
-                className="current-picture"
-                src={currentSite.currentPicture[0]}
-                alt={currentSite.adress}
-                height={200}
-                width={300}
-              />
-            </StyledSwiperSlide>
-            <StyledSwiperSlide>
-              <StyledImage
-                className="current-picture"
-                src={currentSite.currentPicture[1]}
-                alt={currentSite.adress}
-                height={200}
-                width={300}
-              />
-            </StyledSwiperSlide>
+            {siteCurrents.map((current) => (
+              <StyledSwiperSlide>
+                <StyledImage
+                  className="current-picture"
+                  src={current}
+                  alt={currentSite.adress}
+                  height={200}
+                  width={300}
+                />
+              </StyledSwiperSlide>
+            ))}
           </Swiper>
         </StyledSwiperSlide>
         <StyledSwiperSlide>
