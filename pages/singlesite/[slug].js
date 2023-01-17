@@ -34,17 +34,36 @@ export default function singleSite() {
           clickable: true,
         }}
         modules={[Pagination]}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <StyledSwiperSlide>
-          <StyledImage
-            className="document"
-            src={currentSite.document}
-            alt={currentSite.adress}
-            height={200}
-            width={300}
-          />
+          <Swiper
+            className="mySwiper2 swiper-v"
+            direction={"vertical"}
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+          >
+            <StyledSwiperSlide>
+              <div className="info-card">
+                <h2>
+                  {currentSite.coordinates[0] +
+                    " | " +
+                    currentSite.coordinates[1]}{" "}
+                </h2>
+                <h2>{currentSite.adress}</h2>
+                <p className="info">{currentSite.information[0]}</p>
+              </div>
+            </StyledSwiperSlide>
+
+            <StyledSwiperSlide>
+              <div className="info-card">
+                <p className="info">{currentSite.information[1]}</p>
+              </div>
+            </StyledSwiperSlide>
+          </Swiper>
         </StyledSwiperSlide>
 
         <StyledSwiperSlide>
@@ -79,9 +98,21 @@ export default function singleSite() {
           </Swiper>
         </StyledSwiperSlide>
         <StyledSwiperSlide>
+          <StyledFigure2>
+            <StyledImage
+              className="document"
+              src={currentSite.document}
+              alt={currentSite.adress}
+              height={200}
+              width={300}
+            />
+            <p className="source">{currentSite.documentSource}</p>
+          </StyledFigure2>
+        </StyledSwiperSlide>
+        <StyledSwiperSlide>
           <div className="quote-card">
             <p className="quote">{currentSite.quote}</p>
-            <p className="quote-source">{currentSite.quoteSource}</p>
+            <p className="source">{currentSite.quoteSource}</p>
           </div>
         </StyledSwiperSlide>
         <StyledSwiperSlide>
@@ -168,12 +199,7 @@ export default function singleSite() {
             </StyledSwiperSlide>
             <StyledSwiperSlide>
               <div className="credits-card">
-                <h2>
-                  {currentSite.creditsCaption + ": "}
-                  {currentSite.coordinates[0] +
-                    " | " +
-                    currentSite.coordinates[1]}
-                </h2>
+                <h2>{currentSite.creditsCaption}</h2>
                 <ul className="credits-list">
                   <li>{currentSite.credits[0]}</li>
                   <li>{currentSite.credits[1]}</li>
@@ -210,8 +236,8 @@ const StyledSwiperSlide = styled(SwiperSlide)`
 const StyledImage = styled(Image)`
   display: block;
   object-fit: contain;
-  width: 80% !important;
-  height: 80% !important;
+  width: 100%;
+  height: 100%;
   transform: translateZ(0);
 `;
 
@@ -221,8 +247,8 @@ const StyledContainer = styled.div`
 const StyledFigure = styled.figure`
   display: flex;
   object-fit: contain;
-  width: 80% !important;
-  height: 80% !important;
+  width: 100%;
+  height: auto;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
@@ -230,9 +256,24 @@ const StyledFigure = styled.figure`
   flex-flow: column;
   text-indent: 0;
   background-color: black;
-  padding: 5%;
+  margin: 1rem;
+  padding: 1rem;
 `;
-
+const StyledFigure2 = styled.figure`
+  display: flex;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  transform: translateZ(0);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-flow: column;
+  text-indent: 0;
+  background-color: rosybrown;
+  margin: 1rem;
+  padding: 1rem;
+`;
 const StyledLink = styled(Link)`
   position: absolute;
   bottom: 1rem;

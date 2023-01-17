@@ -11,7 +11,7 @@ export default function Legal() {
   }
 
   return (
-    <div className="container-popup">
+    <div>
       <StyledButton onClick={toggleShowPopup}>
         <StyledImage
           src={"/legal--rosybrown.svg"}
@@ -32,11 +32,10 @@ export default function Legal() {
 const StyledDiv = styled.div`
   background-color: white;
   opacity: 95%;
-  padding: 10%;
-  max-width: 960px;
+  padding: 1rem;
   position: relative;
-
   z-index: 20;
+  width: 100dvw;
 `;
 
 const StyledButton = styled.button`
