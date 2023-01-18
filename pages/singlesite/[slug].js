@@ -15,6 +15,10 @@ export default function singleSite() {
   const slug = router.query.slug;
   const currentSite = allSites.find((site) => site.slug === slug);
   const siteCurrents = currentSite.currentPicture;
+  const siteAncients = currentSite.ancientPicture;
+  const siteInformations = currentSite.information;
+  const siteCredits = currentSite.credits;
+  const siteAncientsCaptions = currentSite.ancientCaption;
 
   if (!currentSite) {
     return (
@@ -47,23 +51,19 @@ export default function singleSite() {
             }}
             modules={[Pagination]}
           >
-            <StyledSwiperSlide>
-              <div className="info-card">
-                <h2>
-                  {currentSite.coordinates[0] +
-                    " | " +
-                    currentSite.coordinates[1]}{" "}
-                </h2>
-                <h2>{currentSite.adress}</h2>
-                <p className="info">{currentSite.information[0]}</p>
-              </div>
-            </StyledSwiperSlide>
-
-            <StyledSwiperSlide>
-              <div className="info-card">
-                <p className="info">{currentSite.information[1]}</p>
-              </div>
-            </StyledSwiperSlide>
+            {siteInformations.map((siteInformation) => (
+              <StyledSwiperSlide>
+                <div className="info-card">
+                  <h2>
+                    {currentSite.coordinates[0] +
+                      " | " +
+                      currentSite.coordinates[1]}{" "}
+                  </h2>
+                  <h2>{currentSite.adress}</h2>
+                  <p className="info">{siteInformation}</p>
+                </div>
+              </StyledSwiperSlide>
+            ))}
           </Swiper>
         </StyledSwiperSlide>
 
@@ -109,6 +109,7 @@ export default function singleSite() {
             <p className="source">{currentSite.quoteSource}</p>
           </div>
         </StyledSwiperSlide>
+
         <StyledSwiperSlide>
           <Swiper
             className="mySwiper2 swiper-v"
@@ -120,86 +121,33 @@ export default function singleSite() {
             }}
             modules={[Pagination]}
           >
-            <StyledSwiperSlide>
-              <StyledFigure>
-                <StyledImage
-                  className="ancient-picture"
-                  src={currentSite.ancientPicture[0]}
-                  alt={currentSite.adress}
-                  height={200}
-                  width={300}
-                />
+            {siteAncients.map((ancient) => (
+              <StyledSwiperSlide>
+                <StyledFigure>
+                  <StyledImage
+                    className="ancient-picture"
+                    src={ancient}
+                    alt={currentSite.adress}
+                    height={200}
+                    width={300}
+                  />
+                  {siteAncientsCaptions.map((ancientCaption) => (
+                    <figcaption className="figcaption-ancient">
+                      {ancientCaption}
+                    </figcaption>
+                  ))}
+                </StyledFigure>
+              </StyledSwiperSlide>
+            ))}
 
-                <figcaption className="figcaption-ancient">
-                  {currentSite.ancientCaption[0]}
-                </figcaption>
-              </StyledFigure>
-            </StyledSwiperSlide>
-            <StyledSwiperSlide>
-              <StyledFigure>
-                <StyledImage
-                  className="ancient-picture"
-                  src={currentSite.ancientPicture[1]}
-                  alt={currentSite.adress}
-                  height={200}
-                  width={300}
-                />
-                <figcaption className="figcaption-ancient">
-                  {currentSite.ancientCaption[1]}
-                </figcaption>
-              </StyledFigure>
-            </StyledSwiperSlide>
-            <StyledSwiperSlide>
-              <StyledFigure>
-                <StyledImage
-                  className="ancient-picture"
-                  src={currentSite.ancientPicture[2]}
-                  alt={currentSite.adress}
-                  height={200}
-                  width={300}
-                />
-                <figcaption className="figcaption-ancient">
-                  {currentSite.ancientCaption[2]}
-                </figcaption>
-              </StyledFigure>
-            </StyledSwiperSlide>
-            <StyledSwiperSlide>
-              <StyledFigure>
-                <StyledImage
-                  className="ancient-picture"
-                  src={currentSite.ancientPicture[3]}
-                  alt={currentSite.adress}
-                  height={200}
-                  width={300}
-                />
-                <figcaption className="figcaption-ancient">
-                  {currentSite.ancientCaption[3]}
-                </figcaption>
-              </StyledFigure>
-            </StyledSwiperSlide>
-            <StyledSwiperSlide>
-              <StyledFigure>
-                <StyledImage
-                  className="ancient-picture"
-                  src={currentSite.ancientPicture[4]}
-                  alt={currentSite.adress}
-                  height={200}
-                  width={300}
-                />
-                <figcaption className="figcaption-ancient">
-                  {currentSite.ancientCaption[4]}
-                </figcaption>
-              </StyledFigure>
-            </StyledSwiperSlide>
             <StyledSwiperSlide>
               <div className="credits-card">
                 <h2>{currentSite.creditsCaption}</h2>
+
                 <ul className="credits-list">
-                  <li>{currentSite.credits[0]}</li>
-                  <li>{currentSite.credits[1]}</li>
-                  <li>{currentSite.credits[2]}</li>
-                  <li>{currentSite.credits[3]}</li>
-                  <li>{currentSite.credits[4]}</li>
+                  {siteCredits.map((credit) => (
+                    <li>{credit}</li>
+                  ))}
                 </ul>
               </div>
             </StyledSwiperSlide>
@@ -242,7 +190,7 @@ const StyledFigure = styled.figure`
   display: flex;
   object-fit: contain;
   width: 100%;
-  height: auto;
+  height: 100%;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
@@ -257,7 +205,7 @@ const StyledFigure2 = styled.figure`
   display: flex;
   object-fit: contain;
   width: 100%;
-  height: auto;
+  height: 100%;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
