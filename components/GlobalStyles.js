@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import styled from "styled-components";
-import Image from "next/image";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -53,6 +51,7 @@ const GlobalStyles = createGlobalStyle`
 a {
   text-decoration: none;
   color: black;
+  -webkit-tap-highlight-color: none;
 }    
 button
 {
