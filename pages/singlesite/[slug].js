@@ -13,7 +13,7 @@ import { allSites } from "../../lib/data-sites";
 export default function singleSite() {
   const router = useRouter();
   const slug = router.query.slug;
-  const currentSite = allSites.find((site) => site.slug === slug);
+  const currentSite = allSites?.find((site) => site.slug === slug);
   const siteCurrents = currentSite.currentPicture;
   const ancientPictArr = currentSite.ancientPicture;
   const siteInformations = currentSite.information;
