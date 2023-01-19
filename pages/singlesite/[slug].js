@@ -25,6 +25,9 @@ export default function singleSite() {
       </>
     );
   }
+  if (!currentSite.currentPicture) {
+    return null;
+  }
 
   return (
     <StyledContainer>
