@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import styled from "styled-components";
-import Image from "next/image";
 
 const GlobalStyles = createGlobalStyle`
 

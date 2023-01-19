@@ -4,8 +4,6 @@ import Header from "../../components/header";
 import Popup from "../../components/legal";
 import Legal from "../../components/legal";
 import SitesListComp from "../../components/siteslistComp";
-import Image from "next/image";
-import { findByLabelText } from "@testing-library/react";
 
 export default function SitesList() {
   return (
