@@ -31,6 +31,14 @@ export default function singleSite() {
 
   return (
     <StyledContainer>
+      <StyledLink href="/singlesite">
+        <StyledImage2
+          src={"/profan--rosybrown.svg"}
+          alt="Profan-Logo"
+          height={85}
+          width={85}
+        />
+      </StyledLink>
       <Swiper
         className="mySwiper swiper-h"
         spaceBetween={0}
@@ -153,15 +161,6 @@ export default function singleSite() {
           </Swiper>
         </StyledSwiperSlide>
       </Swiper>
-
-      <StyledLink href="/singlesite">
-        <Image
-          src={"/profan--rosybrown.svg"}
-          alt="Profan-Logo"
-          height={50}
-          width={50}
-        />
-      </StyledLink>
     </StyledContainer>
   );
 }
@@ -172,6 +171,10 @@ const StyledSwiperSlide = styled(SwiperSlide)`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+`;
+
+const StyledImage2 = styled(Image)`
+  transform: rotate(11deg);
 `;
 
 const StyledImage = styled(Image)`
@@ -211,13 +214,14 @@ const StyledFigure2 = styled.figure`
   overflow: hidden;
   flex-flow: column;
   text-indent: 0;
-  background-color: rosybrown;
+  background-color: #e0cccc;
   margin: 1rem;
   padding: 1rem;
 `;
+
 const StyledLink = styled(Link)`
   position: absolute;
-  bottom: 1rem;
+  top: 1rem;
   right: 1rem;
   z-index: 31;
 `;

@@ -15,9 +15,9 @@ export default function Legal() {
       <StyledButton onClick={toggleShowPopup}>
         <StyledImage
           src={"/legal--rosybrown.svg"}
-          alt="Profan-Logo"
-          height={50}
-          width={50}
+          alt="Paragraf-Logo"
+          height={85}
+          width={85}
         />
       </StyledButton>
       {showPopup ? (
@@ -44,4 +44,6 @@ const StyledButton = styled.button`
   right: 1rem;
   z-index: 21;
 `;
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  transform: rotate(11deg);
+`;
