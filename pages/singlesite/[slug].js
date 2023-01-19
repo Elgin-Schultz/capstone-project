@@ -12,11 +12,10 @@ import { allSites } from "../../lib/data-sites";
 export default function singleSite() {
   const router = useRouter();
   const slug = router.query.slug;
+  if (!slug) {
+    return null;
+  }
   const currentSite = allSites.find((site) => site.slug === slug);
-  const siteCurrents = currentSite.currentPicture;
-  const ancientPictArr = currentSite.ancientPicture;
-  const siteInformations = currentSite.information;
-  const siteCredits = currentSite.credits;
 
   if (!currentSite) {
     return (
@@ -25,13 +24,11 @@ export default function singleSite() {
       </>
     );
   }
-  if (!currentSite.currentPicture) {
-    return null;
-  }
+  const ancientPictArr = currentSite.ancientPicture;
+  const siteInformations = currentSite.information;
+  const siteCredits = currentSite.credits;
+  const siteCurrents = currentSite.currentPicture;
 
-  if (!siteCurrents) {
-    return null;
-  }
   return (
     <StyledContainer>
       <Swiper
