@@ -48,23 +48,21 @@ const GlobalStyles = createGlobalStyle`
     ul {
         padding-left: 0px;   
     }
+    *:active, :focus
+    { -webkit-tap-highlight-color: transparent;}
 a {
   text-decoration: none;
   color: black;
-  -webkit-tap-highlight-color: none;
-}    
+}   
+
 button
-{
-    background: none;
+{ background: none;
     border: none;
 } 
-
 .container-legal{
     display: inline-flex;
     align-items: flex-end;
 }
-
-
 
 .swiper-pagination {
     position: fixed;
@@ -109,44 +107,28 @@ button
 }   
 .swiper-pagination {
     position: fixed;
-    bottom: 0.5rem;
+    bottom: 0rem;
 }
 .swiper-pagination-vertical {
     z-index: 99999;
     position: fixed;
-    right: 0.5rem;
-    
+    right: 0rem;
     
 }
 
 .swiper-pagination-bullet{
-    background-color: #D0B3B3 !important;
-    opacity: 80%;
+    background-color: #e0cccc !important;
+    opacity: 90%;
     z-index: 999999;
     height: 1rem;
     width: 1rem;
 }
 .swiper-pagination-bullet-active{
-    background-color:  grey !important;
-    opacity: 80%;
+    background-color:  black !important;
+    opacity: 30%;
     z-index: 999999;
     height: 1rem;
     width: 1rem;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-`;
+}`;
 
 export default GlobalStyles;

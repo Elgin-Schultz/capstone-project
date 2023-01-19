@@ -18,5 +18,5 @@ export default function SitesListComp() {
   );
 }
 const StyledSpan = styled.span`
-  background-color: rosybrown;
+  background-color: #e0cccc;
 `;
