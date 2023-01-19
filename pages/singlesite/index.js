@@ -1,7 +1,5 @@
-import Link from "next/link";
 import styled from "styled-components";
 import Header from "../../components/header";
-import Popup from "../../components/legal";
 import Legal from "../../components/legal";
 import SitesListComp from "../../components/siteslistComp";
 
