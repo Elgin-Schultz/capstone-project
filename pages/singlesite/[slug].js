@@ -29,6 +29,9 @@ export default function singleSite() {
     return null;
   }
 
+  if (!siteCurrents) {
+    return null;
+  }
   return (
     <StyledContainer>
       <Swiper
