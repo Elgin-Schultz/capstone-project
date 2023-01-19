@@ -15,10 +15,9 @@ export default function singleSite() {
   const slug = router.query.slug;
   const currentSite = allSites.find((site) => site.slug === slug);
   const siteCurrents = currentSite.currentPicture;
-  const siteAncients = currentSite.ancientPicture;
+  const ancientPictArr = currentSite.ancientPicture;
   const siteInformations = currentSite.information;
   const siteCredits = currentSite.credits;
-  const siteAncientsCaptions = currentSite.ancientCaption;
 
   if (!currentSite) {
     return (
@@ -121,21 +120,19 @@ export default function singleSite() {
             }}
             modules={[Pagination]}
           >
-            {siteAncients.map((ancient) => (
+            {ancientPictArr.map((ancient) => (
               <StyledSwiperSlide>
                 <StyledFigure>
                   <StyledImage
                     className="ancient-picture"
-                    src={ancient}
+                    src={ancient.picture}
                     alt={currentSite.adress}
                     height={200}
                     width={300}
                   />
-                  {siteAncientsCaptions.map((ancientCaption) => (
-                    <figcaption className="figcaption-ancient">
-                      {ancientCaption}
-                    </figcaption>
-                  ))}
+                  <figcaption className="figcaption-ancient">
+                    {ancient.caption}
+                  </figcaption>
                 </StyledFigure>
               </StyledSwiperSlide>
             ))}
@@ -190,7 +187,7 @@ const StyledFigure = styled.figure`
   display: flex;
   object-fit: contain;
   width: 100%;
-  height: 100%;
+  height: auto;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
@@ -205,7 +202,7 @@ const StyledFigure2 = styled.figure`
   display: flex;
   object-fit: contain;
   width: 100%;
-  height: 100%;
+  height: auto;
   transform: translateZ(0);
   align-items: center;
   justify-content: center;
