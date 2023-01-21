@@ -121,15 +121,15 @@ button
 }
 
 .swiper-pagination-bullet{
-    background-color: #e0cccc !important;
+    background-color: rosybrown!important;
     opacity: 90%;
     z-index: 999999;
     height: 1rem;
     width: 1rem;
 }
 .swiper-pagination-bullet-active{
-    background-color:  black !important;
-    opacity: 30%;
+    background-color:  #ff6080 !important;
+    opacity: 0%;
     z-index: 999999;
     height: 1rem;
     width: 1rem;
