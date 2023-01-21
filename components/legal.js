@@ -15,7 +15,7 @@ export default function Legal() {
       <StyledButton onClick={toggleShowPopup}>
         <StyledImage
           src={"/legal--rosybrown.svg"}
-          alt="Paragraf-Logo"
+          alt="Paragraf"
           height={85}
           width={85}
         />
