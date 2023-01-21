@@ -63,10 +63,7 @@ button
 { background: none;
     border: none;
 } 
-button:active
-{
-transform: rotate(90deg)
-}
+
 .container-legal{
     display: inline-flex;
     align-items: flex-end;
@@ -137,6 +134,18 @@ transform: rotate(90deg)
     z-index: 999999;
     height: 1rem;
     width: 1rem;
-}`;
+}
+@keyframes showing-imprint {
+  from {
+   
+    transform: translateY(50vh);
+  }
+  to {
+    
+    transform: translateY(0);
+  }
+}
+
+`;
 
 export default GlobalStyles;

@@ -32,14 +32,12 @@ export default function singleSite() {
   return (
     <StyledContainer>
       <StyledLink href="/singlesite">
-        <button>
-          <StyledImage2
-            src={"/profan--rosybrown.svg"}
-            alt="Profan-Logo"
-            height={85}
-            width={85}
-          />
-        </button>
+        <StyledImage2
+          src={"/profan--rosybrown.svg"}
+          alt="Profan-Logo"
+          height={85}
+          width={85}
+        />
       </StyledLink>
 
       <Swiper
@@ -238,4 +236,8 @@ const StyledLink = styled(Link)`
   right: 1rem;
   z-index: 31;
   transition: transform 0.2s;
+
+  :active {
+    transform: rotate(30deg);
+  }
 `;

@@ -28,10 +28,19 @@ export default function Legal() {
     </div>
   );
 }
+const StyledDiv2 = styled.div`
+  background-color: white;
+  opacity: 90%;
+  position: relative;
+
+  z-index: 20;
+  width: 100dvw;
+  height: 0dvw; ;
+`;
 
 const StyledDiv = styled.div`
   background-color: white;
-  opacity: 95%;
+  opacity: 90%;
   padding: 1rem;
   position: relative;
   z-index: 20;
@@ -45,4 +54,8 @@ const StyledButton = styled.button`
   z-index: 21;
   transform: rotate(11deg);
   transition: transform 0.2s;
+
+  :active {
+    transform: rotate(30deg);
+  }
 `;
