@@ -63,6 +63,10 @@ button
 { background: none;
     border: none;
 } 
+button:active
+{
+transform: rotate(90deg)
+}
 .container-legal{
     display: inline-flex;
     align-items: flex-end;
