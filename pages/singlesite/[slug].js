@@ -69,7 +69,10 @@ export default function singleSite() {
                       currentSite.coordinates[1]}{" "}
                   </h2>
                   <h2>{currentSite.adress}</h2>
-                  <p className="info">{siteInformation}</p>
+                  <p
+                    className="info"
+                    dangerouslySetInnerHTML={{ __html: siteInformation }}
+                  />
                 </div>
               </StyledSwiperSlide>
             ))}
@@ -114,8 +117,14 @@ export default function singleSite() {
         </StyledSwiperSlide>
         <StyledSwiperSlide>
           <div className="quote-card">
-            <p className="quote">{currentSite.quote}</p>
-            <p className="source">{currentSite.quoteSource}</p>
+            <p
+              className="quote"
+              dangerouslySetInnerHTML={{ __html: currentSite.quote }}
+            />
+            <p
+              className="source"
+              dangerouslySetInnerHTML={{ __html: currentSite.quoteSource }}
+            />
           </div>
         </StyledSwiperSlide>
 
@@ -140,9 +149,10 @@ export default function singleSite() {
                     height={200}
                     width={300}
                   />
-                  <figcaption className="figcaption-ancient">
-                    {ancient.caption}
-                  </figcaption>
+                  <figcaption
+                    className="figcaption-ancient"
+                    dangerouslySetInnerHTML={{ __html: ancient.caption }}
+                  />
                 </StyledFigure>
               </StyledSwiperSlide>
             ))}
