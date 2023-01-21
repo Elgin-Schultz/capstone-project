@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
     @font-face {
 		font-family: 'Trade Gothic';
 		src: url('/fonts/Trade-Gothic-LT.ttf') format('truetype');
+    }
+        @font-face {
+		font-family: 'Trade Gothic Bold';
+		src: url('/fonts/Trade-Gothic-LT-Bold.ttf') format('truetype');
     
 	}
     :root{
