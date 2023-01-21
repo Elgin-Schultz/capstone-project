@@ -63,6 +63,7 @@ button
 { background: none;
     border: none;
 } 
+
 .container-legal{
     display: inline-flex;
     align-items: flex-end;
@@ -133,6 +134,18 @@ button
     z-index: 999999;
     height: 1rem;
     width: 1rem;
-}`;
+}
+@keyframes showing-imprint {
+  from {
+   
+    transform: translateY(50vh);
+  }
+  to {
+    
+    transform: translateY(0);
+  }
+}
+
+`;
 
 export default GlobalStyles;

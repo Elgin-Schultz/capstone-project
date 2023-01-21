@@ -39,6 +39,7 @@ export default function singleSite() {
           width={85}
         />
       </StyledLink>
+
       <Swiper
         className="mySwiper swiper-h"
         spaceBetween={0}
@@ -234,4 +235,9 @@ const StyledLink = styled(Link)`
   top: 1rem;
   right: 1rem;
   z-index: 31;
+  transition: transform 0.2s;
+
+  :active {
+    transform: rotate(30deg);
+  }
 `;
