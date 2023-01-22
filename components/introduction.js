@@ -4,17 +4,17 @@ export default function Introduction() {
   return (
     <p className="introduction">
       <StyledSpan>
-        Im Folgenden lässt sich eine Auswahl ehemaliger, heute profaner,
-        Kultusstätten Hamburgs entdecken. Teilweise ist ihre sakrale Bedeutung
-        noch zu erahnen, teils ist davon nichts mehr erkennbar. Dabei ist diese
-        Zusammenstellung ist nicht an ein bestimmtes Verständnins von Glauben
+        Hier lässt sich eine Auswahl ehemaliger, heute profaner, Kultusstätten
+        Hamburgs entdecken. Teilweise ist ihre sakrale Bedeutung noch zu
+        erahnen, teils ist davon nichts mehr erkennbar. Dabei ist diese
+        Zusammenstellung nicht an ein bestimmtes Verständnins von Glauben
         gebunden, so finden sich hier frühere jüdische, christliche und
         heidnische Plätze.
         <br />
         Alle Stätten sind mit ihren geografischen Koordinaten, alten und neuen
-        Ortsbezeichnungen angegeben. Mit den Farbfotografien möchte ich die
-        Stimmung der heutigen Plätze einfangen, sie sollen keine Überblickt über
-        den jetzigen Zustand geben. Ihnen entgegen steht das historische
+        Ortsbezeichnungen angegeben. Mit meinen Fotos möchte ich die Stimmung
+        der heutigen Plätze einfangen, sie sollen keinen Überblick über den
+        jetzigen Zustand geben. Ihnen entgegen steht das historische
         Bildmaterial, das den Wandel über die Zeit hinweg zeigt. Die Dokumente
         sind nach Möglichkeit so herausgesucht, dass sie uns etwas über den
         Grund der Profanierung verraten. Im Kontrast dazu stehen die
