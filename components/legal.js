@@ -28,15 +28,6 @@ export default function Legal() {
     </div>
   );
 }
-const StyledDiv2 = styled.div`
-  background-color: white;
-  opacity: 90%;
-  position: relative;
-
-  z-index: 20;
-  width: 100dvw;
-  height: 0dvw; ;
-`;
 
 const StyledDiv = styled.div`
   background-color: white;

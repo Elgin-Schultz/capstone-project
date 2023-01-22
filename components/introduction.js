@@ -4,21 +4,22 @@ export default function Introduction() {
   return (
     <p className="introduction">
       <StyledSpan>
-        Im Folgenden lässt sich eine Auswahl mittlerweile profanierter,
-        ehemaliger Kultusstätten Hamburgs entdecken. Teilweise ist ihre sakrale
-        Bedeutung noch zu erahnen, teilweise ist davon nichts mehr erkennbar.
-        Dieser Zusammenstellung kommt es dabei nicht auf ein bestimmtes
-        Verständnins von Religion an, so finden sich hier frühere jüdische,
-        christliche und heidnische Plätze.
+        Im Folgenden lässt sich eine Auswahl ehemaliger, heute profaner,
+        Kultusstätten Hamburgs entdecken. Teilweise ist ihre sakrale Bedeutung
+        noch zu erahnen, teils ist davon nichts mehr erkennbar. Dabei ist diese
+        Zusammenstellung ist nicht an ein bestimmtes Verständnins von Glauben
+        gebunden, so finden sich hier frühere jüdische, christliche und
+        heidnische Plätze.
         <br />
-        Alle Stätten sind mit ihren geografischen Koordinaten angegeben, dazu
-        alte und neue Ortsbezeichnungen. Mit den Farbfotografien möchte ich
-        gerne die Stimmung der heutigen Plätze festhalten, sie sollen keine
-        Übersicht über den jetzigen Zustand darstellen. Ihnen entgegen steht das
-        historische Bildmaterial, das den zeitlichen Wandel der jeweiligen Orte
-        zeigt. Die Dokumente sind möglichst so herausgesucht, dass sie uns etwas
-        über den Grund der Profanierung verraten. Im Kontrast dazu stehen die
-        ausgewählten Zitate.
+        Alle Stätten sind mit ihren geografischen Koordinaten, alten und neuen
+        Ortsbezeichnungen angegeben. Mit den Farbfotografien möchte ich die
+        Stimmung der heutigen Plätze einfangen, sie sollen keine Überblickt über
+        den jetzigen Zustand geben. Ihnen entgegen steht das historische
+        Bildmaterial, das den Wandel über die Zeit hinweg zeigt. Die Dokumente
+        sind nach Möglichkeit so herausgesucht, dass sie uns etwas über den
+        Grund der Profanierung verraten. Im Kontrast dazu stehen die
+        ausgewählten Zitate. So entsteht ein neuer Blick auf das alltägliche
+        Stadtbild.
       </StyledSpan>
     </p>
   );
