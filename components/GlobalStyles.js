@@ -124,7 +124,7 @@ button
 
 .swiper-pagination-bullet{
     background-color: rosybrown!important;
-    opacity: 90%;
+    opacity: 80%;
     z-index: 999999;
     height: 1rem;
     width: 1rem;
@@ -135,16 +135,6 @@ button
     z-index: 999999;
     height: 1rem;
     width: 1rem;
-}
-@keyframes showing-imprint {
-  from {
-   
-    transform: translateY(50vh);
-  }
-  to {
-    
-    transform: translateY(0);
-  }
 }
 
 `;

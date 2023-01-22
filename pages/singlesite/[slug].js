@@ -175,61 +175,9 @@ export default function singleSite() {
     </StyledContainer>
   );
 }
-
-const StyledSwiperSlide = styled(SwiperSlide)`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-`;
-
-const StyledImage2 = styled(Image)`
-  transform: rotate(11deg);
-`;
-
-const StyledImage = styled(Image)`
-  display: block;
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0);
-`;
-
 const StyledContainer = styled.div`
   display: flex;
 `;
-const StyledFigure = styled.figure`
-  display: flex;
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  transform: translateZ(0);
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  flex-flow: column;
-  text-indent: 0;
-  background-color: black;
-  margin: 1rem;
-  padding: 1rem;
-`;
-const StyledFigure2 = styled.figure`
-  display: flex;
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  transform: translateZ(0);
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  flex-flow: column;
-  text-indent: 0;
-  background-color: #e0cccc;
-  margin: 1rem;
-  padding: 1rem;
-`;
-
 const StyledLink = styled(Link)`
   position: absolute;
   top: 1rem;
@@ -239,5 +187,67 @@ const StyledLink = styled(Link)`
 
   :active {
     transform: rotate(30deg);
+  }
+`;
+const StyledImage = styled(Image)`
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+`;
+const StyledImage2 = styled(Image)`
+  transform: rotate(11deg);
+`;
+const StyledSwiperSlide = styled(SwiperSlide)`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+const StyledFigure = styled.figure`
+  display: flex;
+  object-fit: contain;
+
+  transform: translateZ(0);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-flow: column;
+  text-indent: 0;
+  background-color: black;
+  margin: 1rem;
+  padding: 1rem;
+  @media (orientation: portrait) {
+    width: 100%;
+    height: auto;
+  }
+  @media (orientation: landscape) {
+    height: 100%;
+    width: auto;
+  }
+`;
+const StyledFigure2 = styled.figure`
+  display: flex;
+  object-fit: contain;
+
+  transform: translateZ(0);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-flow: column;
+  text-indent: 0;
+  background-color: #e0cccc;
+  margin: 1rem;
+  padding: 1rem;
+  @media (orientation: portrait) {
+    width: 100%;
+    height: auto;
+  }
+  @media (orientation: landscape) {
+    height: 100%;
+    width: auto;
   }
 `;
