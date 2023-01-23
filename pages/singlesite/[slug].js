@@ -1,21 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
-import { useRouter } from "next/router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { allSites } from "../../lib/data-sites";
-
-export default function singleSite() {
-  const router = useRouter();
-  const slug = router.query.slug;
-  if (!slug) {
-    return null;
-  }
+export default function singleSite({ slug }) {
   const currentSite = allSites.find((site) => site.slug === slug);
+  const siteCurrents = currentSite.currentPicture;
+  const ancientPictArr = currentSite.ancientPicture;
+  const siteInformations = currentSite.information;
+  const siteCredits = currentSite.credits;
 
   if (!currentSite) {
     return (
@@ -24,10 +21,6 @@ export default function singleSite() {
       </>
     );
   }
-  const ancientPictArr = currentSite.ancientPicture;
-  const siteInformations = currentSite.information;
-  const siteCredits = currentSite.credits;
-  const siteCurrents = currentSite.currentPicture;
 
   return (
     <StyledContainer>
@@ -175,6 +168,26 @@ export default function singleSite() {
     </StyledContainer>
   );
 }
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { slug: "1" } },
+      { params: { slug: "2" } },
+      { params: { slug: "3" } },
+      { params: { slug: "4" } },
+      { params: { slug: "5" } },
+      { params: { slug: "6" } },
+      { params: { slug: "7" } },
+    ],
+    fallback: false,
+  };
+}
+export async function getStaticProps(context) {
+  return {
+    props: { slug: context.params.slug },
+  };
+}
+
 const StyledContainer = styled.div`
   display: flex;
 `;
